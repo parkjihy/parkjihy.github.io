@@ -3,61 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Park Jihy - Portfolio</title>
+    <title>Park Jihy | Portfolio</title>
     <style>
-        /* 기본 스타일 */
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            box-sizing: border-box;
-            background: #f4f7f6;
+            background: #fafafa;
+            color: #333;
         }
         header {
-            background: #333;
+            background-color: #2c3e50;
             color: white;
-            padding: 20px 0;
             text-align: center;
+            padding: 60px 20px;
         }
         header h1 {
-            font-size: 2.5rem;
+            font-size: 3rem;
             margin: 0;
         }
-        nav {
+        header p {
+            font-size: 1.2rem;
             margin-top: 10px;
         }
+        nav {
+            margin-top: 20px;
+            text-align: center;
+        }
         nav a {
-            margin: 0 15px;
-            color: white;
+            color: #ecf0f1;
+            margin: 0 20px;
             text-decoration: none;
             font-size: 1.1rem;
+            transition: color 0.3s ease;
+        }
+        nav a:hover {
+            color: #3498db;
         }
         section {
-            padding: 40px 15px;
+            padding: 40px 20px;
             text-align: center;
+        }
+        section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+        .intro p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            color: #555;
         }
         .projects {
             display: flex;
             justify-content: center;
             flex-wrap: wrap;
+            gap: 20px;
         }
         .project-card {
             background: white;
             padding: 20px;
-            margin: 10px;
             width: 300px;
-            box-shadow: 0 8px 16px rgba(0,0,0,0.1);
-            border-radius: 10px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+            border-radius: 12px;
+            text-align: center;
+            transition: transform 0.3s ease;
         }
         .project-card img {
-            max-width: 100%;
+            width: 100%;
             border-radius: 8px;
         }
+        .project-card:hover {
+            transform: translateY(-10px);
+        }
         footer {
-            background: #333;
+            background-color: #2c3e50;
             color: white;
-            padding: 10px 0;
+            padding: 15px 20px;
             text-align: center;
+        }
+        footer p {
+            margin: 0;
         }
     </style>
 </head>
@@ -65,16 +90,17 @@
 
 <header>
     <h1>Park Jihy</h1>
+    <p>Architectural Engineer & AI Enthusiast</p>
     <nav>
-        <a href="#about">About</a>
+        <a href="#about">About Me</a>
         <a href="#projects">Projects</a>
         <a href="#contact">Contact</a>
     </nav>
 </header>
 
-<section id="about">
+<section id="about" class="intro">
     <h2>About Me</h2>
-    <p>Hello! I'm Park Jihy, an architectural engineer with a passion for AI and innovation.</p>
+    <p>Hello! I'm Park Jihy, a graduate of Ewha Womans University with a degree in Architectural Engineering. I'm passionate about the fusion of architecture and AI and currently work at Heerim Architects. My focus is on research and development, where I aim to innovate and contribute to the evolution of smart buildings and AI-driven solutions.</p>
 </section>
 
 <section id="projects">
@@ -82,13 +108,13 @@
     <div class="projects">
         <div class="project-card">
             <img src="https://via.placeholder.com/300" alt="Project Image">
-            <h3>Project Title</h3>
-            <p>Description of the project goes here. Highlight your achievements and skills.</p>
+            <h3>Smart Window Development</h3>
+            <p>Developed an AI-based smart window system to control tint and optimize energy efficiency in smart buildings.</p>
         </div>
         <div class="project-card">
             <img src="https://via.placeholder.com/300" alt="Project Image">
-            <h3>Project Title</h3>
-            <p>Description of the project goes here. Highlight your achievements and skills.</p>
+            <h3>AI Smart Housing</h3>
+            <p>Contributed to the development of AI-based technologies to improve comfort and energy efficiency in modern housing.</p>
         </div>
     </div>
 </section>
@@ -96,6 +122,7 @@
 <section id="contact">
     <h2>Contact</h2>
     <p>Email: parkjihy@example.com</p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/parkjihy" target="_blank">Park Jihy LinkedIn</a></p>
 </section>
 
 <footer>
